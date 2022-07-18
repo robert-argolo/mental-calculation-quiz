@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+width: 100vw;
+height: 100vh;
+background-color: black;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.modal-quiz{
+width: 50rem;
+
+padding: 2rem;
+background-color: white;
+display: none;
+flex-direction: column;
+align-items: center;
+
+}
+
+.quiz-label{
+    text-align: center;
+    font-size: 7rem;
+    margin-bottom: 1rem;
+}
+
+.quiz-input{
+    width: 15rem;
+    height: 10rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 7rem;
+    border: 2px solid black;
+}
+
+.quiz-btn{
+    all: unset;
+    background-color: gray;
+    color: white;
+    border: 2px solid black;
+    padding: 1rem;
+    border-radius: 14px;
+    margin-bottom: 3rem;
+    font-size: 5rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.quiz-warning{
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+
+.correct-background{
+    background-color: rgba(0, 128, 0, 0.5);
+}
+.incorrect-background{
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.correct-warning{
+    color: green;
+}
+.incorrect-warning{
+    color: red;
+}
+
+.result{
+    display: none;
+}
+.end-game{
+    background-color: green;
+}
+
+.modal-end-game{
+    animation: animationEndGame 3s infinite alternate ;
+}
+
+@keyframes animationEndGame {
+    0%{transform: translateY(5rem);}
+    50%{transform: translateY(0rem);}
+    100%{transform: translateY(-5rem);}
+}
+.btn-start-game{
+    background-color: black;
+color: white;
+border: 1px solid white;
+border-radius: 2rem;
+padding: 2rem;
+cursor: pointer;
+    }
+.btn-start-game:hover{
+background-color: white;
+color: black;
+}
+.btn-start-game:active{
+    background-color: rgba(146, 255, 134, 0.641);
+    color: black;
+}
+
+.bg--black{
+    background-color: black;
+}
