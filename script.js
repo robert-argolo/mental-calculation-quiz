@@ -20,6 +20,8 @@ setTimeout(showNextModalQuiz, 2000);
     }else{
         removeCorrectsClass();
         insertIncorrectsClass();
+        inputQuiz[numberQuestion].value = ''
+        inputQuiz[numberQuestion].focus()
     }
     console.log(numberQuestion);
    
